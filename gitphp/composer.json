@@ -1,10 +1,20 @@
 {
     "name": "hernandezpierre/gitphp",
     "require": {
-        "phpunit/phpunit": "^6.2"
+        "phpunit/phpunit": "5.7.*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.3"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "authors": [
         {
